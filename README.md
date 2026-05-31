@@ -1,32 +1,35 @@
-
-توجه : این نسخه یک نسخه اولیه از این سیستم هست و هنوز به صورت کامل اجرا و منتشر نشده
-
-#سامانه مدیریت تعمیرات موبایل
+# سامانه مدیریت تعمیرات موبایل
 
 یک سیستم کامل و حرفه‌ای برای مدیریت فرآیند تعمیرات موبایل با معماری جداگانه (جداسازی Frontend از Backend).
 
 ## ویژگی‌ها
 
 *   **پنل مشتری:** ثبت درخواست تعمیر، دریافت کد پیگیری یکتا، پیگیری وضعیت تعمیر.
-*   **پنل مدیریت:** احراز هویت امن، مشاهده و جستجوی درخواست‌ها، تغییر وضعیت تعمیر، ثبت هزینه نهایی و قطعات مصرفی، خروجی گزارش اکسل.
+*   **پنل مدیریت:** احراز هویت امن، مشاهده و جستجوی درخواست‌ها، تغییر وضعیت تعمیر، ثبت هزینه نهایی و قطعات مصرفی، خروجی گزارش اکسل، نمودارهای آماری.
 *   **طراحی مدرن:** رابط کاربری واکنش‌گرا با Tailwind CSS و انیمیشن‌های نرم.
+*   **API استاندارد:** ارتباط Frontend و Backend از طریق REST API.
 
-## تکنولوژی‌های استفاده شده
+##  تکنولوژی‌های استفاده شده
 
-*   **Frontend:** React, TypeScript, Vite, Tailwind CSS
-*   **Backend:** PHP, MySQL
-*   **ارتباط:**  REST API
+| بخش | تکنولوژی |
+|------|-----------|
+| Frontend | React, TypeScript, Vite, Tailwind CSS, Axios, Recharts, Framer Motion |
+| Backend | PHP 8, MySQL, PDO |
+| سرور محلی | XAMPP (Apache + MySQL) |
 
-## نصب و راه‌اندازی (اجرای لوکال)
+## پیش‌نیازها
 
-### پیش‌نیازها
+قبل از شروع، مطمئن شوید موارد زیر روی سیستم شما نصب شده است:
 
-*   [XAMPP](https://www.apachefriends.org/) (یا نرم‌افزار مشابه برای اجرای Apache و MySQL)
-*   [Node.js](https://nodejs.org/) (برای اجرای محیط توسعه React)
+- [XAMPP](https://www.apachefriends.org/) (نسخه 8 یا بالاتر)
+- [Node.js](https://nodejs.org/) (نسخه 18 یا بالاتر)
+- [Git](https://git-scm.com/) (اختیاری، برای clone مخزن)
+- یک مرورگر مدرن (Chrome، Firefox، Edge)
 
-### مراحل اجرا
+## راهنمای نصب و اجرا (گام به گام)
 
-1.  **کلون کردن مخزن:**
-    ```bash
-    git clone https://github.com/useraref/repair_system.git
-    cd repair_system
+### دریافت پروژه
+
+```bash
+git clone https://github.com/useraref/repair_system-beta-.git
+cd repair_system-beta-
