@@ -25,5 +25,5 @@
 
 1.  **کلون کردن مخزن:**
     ```bash
-    git clone https://github.com/[YourUsername]/repair_systemv1.git
-    cd repair_systemv1
+    git clone https://github.com/useraref/repair_system.git
+    cd repair_system
